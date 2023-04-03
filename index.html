@@ -30,6 +30,7 @@
     <!--h1(36px) h2 (30px) h3 (24px) h4 (18px) h5 (14px) h6 (12px)-->
     <!-- how to write colorful text -->
 
+
     <h1><p style="color:red;">Hi ! this is Rishigyanu and i am here to be Learn HTML language</p></h1>
     <h2><p style="color: chartreuse;">Hi ! this is Rishigyanu and i am here to be Learn HTML language</p></h2>
     <h3><p style="color: deeppink;">Hi ! this is Rishigyanu and i am here to be Learn HTML language</p></h3>
@@ -37,8 +38,13 @@
     <h5>Hi ! this is Rishigyanu and i am here to be Learn HTML language</h5>
     <h6>Hi ! this is Rishigyanu and i am here to be Learn HTML language</h6>
     <hr>
+    <!-- how to tag image on the web page and ,make reference to another page-->
+    <a href="https://www.w3schools.com/"target="_blank">
+    <image src="pictures/gautam.jpg" alt="mypic" width="200"height="200"></a>
+   
+   
     <br>
-    <h1>This is <strong><p style="color:crimson;">GAutam Kumar Mahato</p></strong></h1>
+    <h1>This is <strong><span style="color: lawngreen;">GAutam Kumar Mahato</span></strong></h1>
     <!--This is bold text we used to write the contents-->
     <p>This is stylish text we used to write the contents</p>
     
@@ -72,8 +78,181 @@
     <a href="tel:"> +919264120271</a>
     <br>
     <a href="Gautam_202210.pdf"><p style="color: deeppink;">Download My Resume</p></a>
+    <hr> <br>
+
+
+    <!-- To picture tag with (.webp extention ) -->
+    <image src="pictures/gautam.jpg" alt="Pic" width="200"height="200">
     
+         <br>
+    <h1><p style="color: deeppink;">1. Nature</p></h1>
+    <picture>
+        <source srcset="pictures/nature.webp" width="300">
+        <source srcset="pictures/gautam.jpg">
+        <img src="pictures/gautam.jpg" alt="">
         
+    </picture>
+    
+
+
+    <!-- To do figure Tag -->
+    <br>
+    <h1><p style="color: deeppink;">2. Bodh Gaya</p></h1>
+
+    <figure>
+        <img src="pictures/gaya_pic.jpg" alt="" width="300">
+        <figcaption>बोधगया (Bodh Gaya) बिहार राज्य के गया ज़िले में स्थित एक नगर है, जिसका गहरा ऐतिहासिक और धार्मिक महत्व है।
+             यहाँ महात्मा बुद्ध को बोधि वृक्ष के तले ज्ञान प्राप्त हुआ था। बोध गया में प्रति वर्ष प्रबुद्ध सोसाइटी द्बारा ज्ञान एवं सम्मान समारोह किया जाता है !
+              बोधगया राष्ट्रीय राजमार्ग 83 पर स्थित है।
+        </figcaption>
+    </figure>
+
+
+
+    <!-- ToDo  Symentic elements -->
+    <h2>ToDo  Symentic elements</h2>
+    <header>
+        <nav>
+            <p>My Header</p>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            My Hero page
+        </section>
+    </main>
+    <footer>
+        <p>
+            AWS Solution Architect <b><span style="color: chartreuse;">Gautam Mahato</span></b>
+        </p>
+    </footer>
+
+
+
+    <!-- HTML List  -->
+            <!-- Unordered List -->
+    <ul style="list-style-type: circle;">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        
+    </ul>
+    <br>
+    <hr>
+
+             <!-- Ordered List -->
+    <ol type="a">
+        <li> HTML </li>
+        <li> JAVA </li>
+        <li> CSS </li>
+        <hr>
+
+    </ol>
+   
+        <ul>
+            <li>HTML <ul>
+
+                 <li>HTML Sementic Layout</li>
+                 <li>Sementic Elements
+                    <ol>
+                        <li>Header</li>
+                        <li>Footer</li>
+                    </ol>
+                 </li>
+                 <li>Non-Sementic Elements</li>
+        </ul></li>
+
+        <li>CSS</li>
+        <li> javaScript</li>
+        
+        </ul>
+        <hr>
+
+
+
+
+    
+    <!-- HTML Form layout  -->
+    <h2> Registration form</h2>
+    <form action="#">
+        <label for="fname">Full Name</label>
+             <input type="text" id="fname" name="fname" autofocus aria-autocomplete="off" size="50">
+             
+    <br><br>
+       <label for="datemax">Birth date before 01-01-2002</label>
+
+              <input 
+              type="date" 
+              id="Birth date before 01-01-2002" 
+              name="datemax"
+              max="2002-01-01"
+              size="16"
+              >
+              
+    <br><br>
+    <label for="date"> Enter date after 03-04-2023</label>
+        <input 
+            type="date"
+            id="datemin"
+            name="datemin"
+            min="01-01-2020"
+            size="16"
+        >
+        
+    <br><br>
+    <label for="quantity"> (between 1 and 5):</label>
+    <input 
+         type="number"
+         id="quantity"
+         name="quantity"
+         min="1"
+         max="5"
+    >
+    
+    <br><br>
+    <label for="files"> Select files:</label>
+    <input 
+          type="file"
+          id="file"
+          name="file"
+          multiple
+    >
+   
+    <br><br>
+    <label for="text">Email</label>
+    <input
+          type="Email"
+          id="Email"
+          name="Email"
+          max="30"
+          placeholder="Demo@gmail.com"
+          required
+          >
+          
+    <br><br>
+    <label for="numbers">Mobile Number</label>
+          <input
+                type="Number"
+                id="number"
+                name="Number"
+                max="12"
+            >
+            
+    <br><br> <br>
+    <input type="submit"
+
+    >
+    <br><br>
+    <image src="pictures/html.jpg"></image>
+    
+
+
+
+
+        
+
+
 
 
       
